@@ -5,6 +5,9 @@ from tastypie.authorization import Authorization
 from tastypie import fields
 # from core_app import utils
 
+# Here we create Resource, by which every query will be proceed and stored in db
+# Somekind of skeleton of resource
+
 
 class CommentResource(ModelResource):
     url = fields.CharField(attribute="url")
